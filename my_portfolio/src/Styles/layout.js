@@ -1,7 +1,14 @@
 import styled from 'styled-components';
+
+
+
+
+
 export const LayoutWrapper = styled.div`
-    padding: 4rem;
-    max-width: 1200px;
+    color:#fff48f;
+    background-color:#24a19c; 
+    padding:3rem;
+    /* max-width: 1200px; */
     margin: 0 auto;
 `;
 export const FooterWrapper = styled.footer`
@@ -9,7 +16,7 @@ export const FooterWrapper = styled.footer`
     div {
         margin: .5rem 0;
         a {
-            color: black;
+            color: #fff48f;
             font-weight: bolder;
             text-decoration: none;
             transition: opacity 250ms ease;
@@ -34,6 +41,7 @@ export const GridContainer = styled.div`
 `;
 // Pull Quote
 export const PullQuote = styled.div`
+     
     padding: 4rem 0;
     text-align: center;
     blockquote {
