@@ -4,8 +4,8 @@ import styled from 'styled-components';
 export const LayoutBody = styled.body`
     @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
     font-family: 'Fjalla One', sans-serif;
-    color:#fff48f;
-    background-color:#24a19c; 
+    color:#07031a;
+    background-color:#f4f6ff; 
     padding:3rem;
     
     
@@ -13,8 +13,7 @@ export const LayoutBody = styled.body`
 
 
 export const LayoutWrapper = styled.div`
-    color:#fff48f;
-  
+    
 
     @media  screen and (min-width: 768px) {
         padding:3rem;
@@ -30,7 +29,7 @@ export const FooterWrapper = styled.footer`
     div {
         margin: .5rem 0;
         a {
-            color: #fff48f;
+            color: #4f8a8b;
             font-weight: bolder;
             text-decoration: none;
             transition: opacity 250ms ease;
@@ -42,6 +41,7 @@ export const FooterWrapper = styled.footer`
 `;
 // grid container
 export const GridContainer = styled.div`
+    text-align: center;
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -73,6 +73,7 @@ export const PullQuote = styled.div`
         }
     }
     h6 {
+        color:#4f8a8b;
         text-align: center;
         margin-top: 0;
         @media screen and (min-width: 768px) {

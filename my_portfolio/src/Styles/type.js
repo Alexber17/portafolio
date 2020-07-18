@@ -16,7 +16,7 @@ export const HeaderOne = styled.h1`
     }
 `;
 export const title = styled.h2`
-    
+    color:#4f8a8b;
     margin:auto;
     font-size: 1rem;
 

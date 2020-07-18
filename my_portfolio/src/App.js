@@ -10,6 +10,8 @@ import {LayoutBody} from './Styles/layout'
 
 
 
+
+
 function App() {
   let [data, setData] = useState({});
   
@@ -58,7 +60,7 @@ function App() {
         <Fade  bottom  >
         <Footer data={data}/>
         </Fade>
-        
+            
         </Layout>
         </LayoutBody>
      
