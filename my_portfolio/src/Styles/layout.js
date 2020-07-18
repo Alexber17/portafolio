@@ -14,10 +14,15 @@ export const LayoutBody = styled.body`
 
 export const LayoutWrapper = styled.div`
     color:#fff48f;
-   
-    padding:3rem;
+  
+
+    @media  screen and (min-width: 768px) {
+        padding:3rem;
     max-width: 1200px;
     margin: 0 auto;
+    }
+
+
 `;
 export const FooterWrapper = styled.footer`
        text-align: center;

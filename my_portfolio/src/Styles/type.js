@@ -46,8 +46,8 @@ export const BannerImage = styled.div`
         width:100%
     }
     @media screen and (min-width: 768px){
-            max-width: 250px;
-            height: 250px;
+            max-width: 300px;
+            height: 300px;
 
          }
 `;

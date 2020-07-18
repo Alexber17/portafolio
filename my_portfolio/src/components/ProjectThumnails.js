@@ -9,9 +9,16 @@ const ProjectThumbnails =(props)=>{
         
         <div >
         <Fade bottom>
+            
         <HeaderThree>{props.project.fields.title}</HeaderThree>
-        <BannerImage2><img  src={props.project.fields.thumbnail.fields.file.url}
-        atl={props.project.fields.thumbnail.fields.title}/></BannerImage2>
+        <BannerImage2>
+           
+        <a href={props.project.fields.link}>
+                <img  src={props.project.fields.thumbnail.fields.file.url}
+                atl={props.project.fields.thumbnail.fields.title}/>
+        </a>
+        </BannerImage2>
+
         
         <div><RichText content={props.project.fields.description}/></div>
         {props.project.fields.technologies == true? <SmallFlex> {props.project.fields.technologies.map((name)=><div key={uuid()} >{name}</div>)} </SmallFlex> : '' }
