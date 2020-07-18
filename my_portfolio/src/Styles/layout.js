@@ -1,17 +1,24 @@
 import styled from 'styled-components';
 
 
-
+export const LayoutBody = styled.body`
+    color:#fff48f;
+    background-color:#24a19c; 
+    padding:3rem;
+    
+    
+`;
 
 
 export const LayoutWrapper = styled.div`
     color:#fff48f;
-    background-color:#24a19c; 
+   
     padding:3rem;
-    /* max-width: 1200px; */
+    max-width: 1200px;
     margin: 0 auto;
 `;
 export const FooterWrapper = styled.footer`
+       text-align: center;
     margin: 1rem 0;
     div {
         margin: .5rem 0;

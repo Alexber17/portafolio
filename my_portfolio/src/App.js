@@ -6,6 +6,8 @@ import {getContentfulNav} from './Queries/index.js'
 import * as headings from './Styles/type.js'
 import Footer from './components/Footer.js'
 import Fade from 'react-reveal/Fade';
+import {LayoutBody} from './Styles/layout'
+
 
 
 function App() {
@@ -27,25 +29,40 @@ function App() {
   
   if(data.fields){
     return(
-      <Layout>
-        <Fade  bottom >
-      
-        <headings.HeaderOne>{data.fields.websiteTitle}</headings.HeaderOne>
-        </Fade>
-        <Fade bottom>
-        <headings.HeaderTwo larger>{data.fields.websiteSubtitle}</headings.HeaderTwo>
-        </Fade>
-        <Fade  bottom  >
-        <headings.BannerImage>
-          <img src={data.fields.bannerImage.fields.file.url} alt={data.fields.bannerImage.fields.title}/>
-        </headings.BannerImage>
-        </Fade>
-        <HomepageSections/>
+      <LayoutBody>
+        <Layout>
+        
+          <Fade  bottom duration={3000} >
+            <headings.HeaderOne larger>
+              {data.fields.websiteTitle}
+                <Fade delay={2000} bottom >
+                  <headings.title ><h2>Software Developer</h2></headings.title>
+                </Fade>
+            </headings.HeaderOne>
+          </Fade> 
 
-      <Fade  bottom  >
-       <Footer data={data}/>
-       </Fade>
-      </Layout>
+          <Fade bottom>
+          <headings.HeaderTwo larger>{data.fields.websiteSubtitle}</headings.HeaderTwo>
+          </Fade>
+
+          <Fade  bottom  >
+          <HomepageSections/>
+          </Fade>
+
+          <Fade  bottom  >
+          <headings.BannerImage>
+            <img src={data.fields.bannerImage.fields.file.url} alt={data.fields.bannerImage.fields.title}/>
+          </headings.BannerImage>
+          </Fade>
+
+        <Fade  bottom  >
+        <Footer data={data}/>
+        </Fade>
+        
+        </Layout>
+        </LayoutBody>
+     
+   
     )
   }
   return <div>...loading</div>

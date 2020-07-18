@@ -1,16 +1,37 @@
 import styled from 'styled-components';
 // H Levels
+
 export const HeaderOne = styled.h1`
-    font-size: 1.5rem;
-    text-align: left;
+    width: 100%;
+    height: 100vh;
+    font-size: 2rem;
+    margin:auto;
+    padding-top:20%;
+    
+    
+    text-align: center ;
     @media screen and (min-width: 768px) {
-        font-size: 1rem;
-        text-align: right;
+        font-size: 3rem;
+        text-align: center;
+    }
+`;
+export const title = styled.h2`
+    
+    margin:auto;
+    font-size: 1rem;
+
+    /* padding-top:25%; */
+    
+    text-align: center ;
+    @media screen and (min-width: 768px) {
+        font-size: 1.5rem;
+        text-align: center;
     }
 `;
 
 
 export const HeaderTwo = styled.h2`
+
     font-size: ${props => props.larger ? '3rem' : '1.6rem'};
     text-align: ${props => props.align ? props.align : 'initial'};
     margin: 3rem 0;
@@ -23,6 +44,24 @@ export const BannerImage = styled.div`
     margin: 2rem 0;
     img{
         width:100%
+    }
+    @media screen and (min-width: 768px){
+            max-width: 250px;
+            height: 250px;
+
+         }
+`;
+
+export const BannerImage2 = styled.div`
+    margin: 2rem 0;
+    img{
+        max-width: 100%;
+         height: auto;
+         @media screen and (min-width: 768px){
+            max-width: 200px;
+            height: 200px;
+
+         }
     }
 `;
 
