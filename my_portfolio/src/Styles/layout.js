@@ -2,6 +2,8 @@ import styled from 'styled-components';
 
 
 export const LayoutBody = styled.body`
+    @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+    font-family: 'Fjalla One', sans-serif;
     color:#fff48f;
     background-color:#24a19c; 
     padding:3rem;
